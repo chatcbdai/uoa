@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Coverage
+.coverage
+.early.coverage/
+htmlcov/
+.pytest_cache/
+
+# CLI History
+.assistant_history
+
+# Credentials
+credentials.json
+credentials.enc
+storage/social_media/credentials/
+*_credentials.json
+*.key
+
+# Test artifacts
+test_*.db
+tests/test_*.db
+test_thread_safety.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Social media storage
+storage/social_media/posts_history/
+storage/social_media/media/temp/
+
+# Downloads
+downloads/
+
+# Screenshots
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# OS files
+Thumbs.db

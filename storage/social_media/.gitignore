@@ -1,0 +1,16 @@
+# Ignore all credential files
+credentials/*.enc
+credentials/master_key.enc
+
+# Ignore actual post data but keep templates
+content/scheduled_posts.csv
+content/*.csv
+!content/posts_template.csv
+
+# Ignore logs
+logs/*.db
+logs/*.log
+
+# Ignore uploaded media
+media/*
+!media/.gitkeep
