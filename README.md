@@ -212,22 +212,22 @@ results = await post_to_social(
 
 ### 📚 Core Modules
 
-- **[Browser Engines](docs/browser-engines.md)** - StealthBrowser, Playwright, Camoufox
-- **[Anti-Detection](docs/anti-detection.md)** - Fingerprinting and bypass techniques
-- **[Scrapers](docs/scrapers.md)** - Unified scraping interface
-- **[Social Media](docs/social-media.md)** - Platform automation
-- **[AI Assistant](docs/ai-assistant.md)** - Natural language interface
+- **Browser Engines** - StealthBrowser, Playwright, Camoufox
+- **Anti-Detection** - Fingerprinting and bypass techniques
+- **Scrapers** - Unified scraping interface
+- **Social Media** - Platform automation
+- **AI Assistant** - Natural language interface
 
 </td>
 <td width="50%">
 
 ### 🔧 Advanced Topics
 
-- **[Configuration](docs/configuration.md)** - Environment and settings
-- **[Authentication](docs/authentication.md)** - Credential management
-- **[Rate Limiting](docs/rate-limiting.md)** - Request throttling
-- **[Error Handling](docs/error-handling.md)** - Exception management
-- **[Best Practices](docs/best-practices.md)** - Production tips
+- **Configuration** - Environment and settings
+- **Authentication** - Credential management
+- **Rate Limiting** - Request throttling
+- **Error Handling** - Exception management
+- **Best Practices** - Production tips
 
 </td>
 </tr>
@@ -328,15 +328,26 @@ graph TB
     A[CLI/API Interface] --> B[AI Assistant]
     B --> C[Task Executor]
     C --> D[Browser Factory]
-    D --> E[StealthBrowser]
-    D --> F[Playwright Engine]
+    D --> E[StealthBrowser<br/>with Anti-Detection]
+    D --> F[Playwright Engine<br/>with Stealth Mode]
     D --> G[Camoufox Engine]
-    C --> H[Scraper System]
-    C --> I[Social Media Orchestrator]
-    I --> J[Platform Adapters]
+    D --> H[Static Engine]
+    
     E --> K[Anti-Detection Layer]
     K --> L[Fingerprint Protection]
     K --> M[Behavior Simulation]
+    K --> N[Bypass Scripts]
+    
+    E --> P[Playwright Core]
+    F --> P[Playwright Core]
+    
+    C --> Q[Scraper System]
+    C --> R[Social Media Orchestrator]
+    R --> S[Platform Adapters]
+    
+    style E fill:#4ECDC4,stroke:#333,stroke-width:2px
+    style K fill:#FFD93D,stroke:#333,stroke-width:2px
+    style P fill:#6BCF7F,stroke:#333,stroke-width:2px
 ```
 
 ## 🔌 API Reference
