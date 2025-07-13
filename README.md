@@ -21,25 +21,19 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Playwright-Ready-45ba4b?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
   <img src="https://img.shields.io/badge/AI-Powered-FF6B6B?style=flat-square&logo=openai&logoColor=white" alt="AI Powered" />
-  <img src="https://img.shields.io/badge/Anti--Detection-Enabled-4ECDC4?style=flat-square&logo=shield&logoColor=white" alt="Anti-Detection" />
+  <img src="https://img.shields.io/badge/Anti--Detection-Always_On-4ECDC4?style=flat-square&logo=shield&logoColor=white" alt="Anti-Detection" />
   <img src="https://img.shields.io/badge/Social_Media-Automated-1DA1F2?style=flat-square&logo=twitter&logoColor=white" alt="Social Media" />
   <img src="https://img.shields.io/badge/Web_Scraping-Advanced-FF6B35?style=flat-square&logo=firefox&logoColor=white" alt="Web Scraping" />
 </p>
 
-<!-- Animated Demo GIF -->
-<br/>
-<img src="https://user-images.githubusercontent.com/placeholder/uoa-demo.gif" alt="UOA Demo" width="80%" />
-<br/>
-<br/>
-
 <!-- Quick Navigation -->
 <p align="center">
   <a href="#-features">Features</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-anti-detection-system">Anti-Detection</a> •
   <a href="#-installation">Installation</a> •
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-documentation">Documentation</a> •
-  <a href="#-examples">Examples</a> •
-  <a href="#-api-reference">API</a> •
   <a href="#-contributing">Contributing</a>
 </p>
 
@@ -65,7 +59,7 @@
   <br/><br/>
   <b>🛡️ Truly Undetectable</b>
   <br/>
-  <sub>Advanced fingerprinting protection and human-like behavior simulation</sub>
+  <sub>7 advanced bypass scripts applied to EVERY web request automatically</sub>
 </td>
 <td width="33%" align="center">
   <img src="https://img.icons8.com/fluency/96/000000/artificial-intelligence.png" alt="AI Powered"/>
@@ -89,54 +83,150 @@
 <details open>
 <summary><b>🛡️ Anti-Detection Arsenal</b></summary>
 
-- **Advanced Fingerprinting Protection**: Bypass even the most sophisticated detection systems
-- **Human-like Behavior**: Natural typing, mouse movements, and interaction delays
-- **Multiple Browser Engines**: StealthBrowser, Playwright, Camoufox, and Static modes
-- **Dynamic Headers**: Rotating User-Agents, realistic viewport sizes, and browser profiles
-- **JavaScript Bypass Scripts**: WebDriver detection, Chrome runtime, and plugin spoofing
+- **Always-On Protection**: Anti-detection is enabled by default for ALL operations
+- **7 Bypass Scripts**: Applied automatically to every browser instance:
+  - `webdriver_fully.js` - Hides automation detection
+  - `navigator_plugins.js` - Spoofs browser plugins
+  - `playwright_fingerprint.js` - Fixes Playwright-specific fingerprints
+  - `notification_permission.js` - Normalizes permissions
+  - `pdf_viewer.js` - Adds PDF viewer support
+  - `screen_props.js` - Sets realistic screen dimensions
+  - `window_chrome.js` - Adds Chrome object for Chromium browsers
+- **Human-like Behavior**: Natural typing, mouse movements, and randomized delays
+- **Browser Launch Arguments**: Disables automation flags and suspicious features
+- **Dynamic Fingerprinting**: Realistic browser profiles that change per session
 
 </details>
 
 <details>
-<summary><b>🌐 Web Automation Superpowers</b></summary>
+<summary><b>🤖 AI-Powered Automation</b></summary>
 
-- **Intelligent Scraping**: Single page, pattern matching, full-site crawling
-- **Smart Element Detection**: AI-powered dynamic element identification
-- **Form Automation**: Complex multi-step forms with file uploads
-- **Session Management**: Cookie persistence and authentication handling
-- **Concurrent Processing**: Rate-limited parallel execution
-
-</details>
-
-<details>
-<summary><b>📱 Social Media Automation</b></summary>
-
-- **Multi-Platform Support**: Instagram, Twitter/X, Facebook, LinkedIn
-- **Bulk Posting**: CSV-based content scheduling and management
-- **Media Handling**: Image and video uploads with metadata
-- **Security**: Encrypted credential storage with OS keyring integration
-- **Smart Detection**: No hardcoded selectors - adapts to UI changes
+- **Natural Language Commands**: Just describe what you want to do
+- **Multi-LLM Support**: OpenAI GPT-4, Anthropic Claude, Google Gemini
+- **Intelligent Task Planning**: AI breaks down complex tasks automatically
+- **Dynamic Element Detection**: AI finds elements even when selectors change
+- **Context-Aware Actions**: Understands page content and adapts behavior
 
 </details>
 
 <details>
-<summary><b>🤖 AI Assistant Interface</b></summary>
+<summary><b>🌐 Web Capabilities</b></summary>
 
-- **Natural Language**: Plain English commands like "scrape all documentation from..."
-- **Context Memory**: Maintains conversation history for complex tasks
-- **Task Planning**: Automatic breakdown of complex operations
-- **Error Recovery**: Intelligent retry logic and graceful degradation
+- **Universal Scraping**: Extract data from any website, even with heavy JavaScript
+- **Social Media Automation**: Post to Instagram, Twitter, Facebook, LinkedIn
+- **Search Engine Automation**: Google, Bing, DuckDuckGo searches
+- **Form Automation**: Fill and submit complex forms
+- **File Downloads**: Handle downloads with progress tracking
+- **Screenshot Capture**: Full page or element-specific screenshots
 
 </details>
+
+<details>
+<summary><b>🚀 Developer Experience</b></summary>
+
+- **Simple API**: One-line commands for complex operations
+- **Async/Await Support**: Modern Python async patterns
+- **Type Hints**: Full type annotations for better IDE support
+- **Comprehensive Logging**: Debug mode for troubleshooting
+- **Extensible Architecture**: Easy to add new capabilities
+- **Storage Options**: SQLite, PostgreSQL, MongoDB support
+
+</details>
+
+## 🏗️ Architecture
+
+The UOA system is built with a modular, layered architecture that ensures anti-detection is applied consistently across all operations:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        User Interface                        │
+│                    (CLI / API / Assistant)                   │
+└─────────────────────┬───────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────┐
+│                    Request Processing                        │
+│              (Natural Language → Actions)                    │
+└─────────────────────┬───────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────┐
+│                    Browser Factory                          │
+│            (ALWAYS applies anti-detection)                  │
+└─────────────────────┬───────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────┐
+│                 Browser Engine Layer                        │
+│  ┌──────────────┬──────────────┬─────────────┬───────────┐ │
+│  │StealthBrowser│PlaywrightBrowser│CamoufoxBrowser│StaticBrowser│ │
+│  │   (Primary)  │  (Adapter)    │  (Firefox)  │  (HTTP)   │ │
+│  └──────────────┴──────────────┴─────────────┴───────────┘ │
+└─────────────────────┬───────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────┐
+│              Anti-Detection Manager                         │
+│         (Centralized bypass script injection)               │
+│                 ↓ ↓ ↓ ↓ ↓ ↓ ↓                              │
+│     [7 Bypass Scripts Applied Before ANY Web Access]       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Key Components:
+
+1. **Browser Factory** (`browser/factory.py`)
+   - Central point for all browser creation
+   - Anti-detection enabled by default (`anti_detection=True`)
+   - Logs warnings if anti-detection is disabled
+
+2. **Anti-Detection Manager** (`browser/core/anti_detection_manager.py`)
+   - Loads and manages all 7 bypass scripts
+   - Applies scripts to every browser page
+   - Provides consistent browser launch arguments
+   - Single source of truth for anti-detection
+
+3. **Browser Engines** (`browser/engines/`)
+   - **StealthBrowser**: Primary implementation with full anti-detection
+   - **PlaywrightBrowser**: Adapter that adds bypass scripts to Playwright
+   - **CamoufoxBrowser**: Firefox-based with built-in stealth features
+   - **StaticBrowser**: HTTP client with stealth headers only
+
+4. **Bypass Scripts** (`anti_detection/bypasses/`)
+   - Canonical location for all anti-detection JavaScript
+   - Applied in specific order for maximum effectiveness
+   - Tested against major bot detection services
+
+## 🛡️ Anti-Detection System
+
+### How It Works
+
+1. **Automatic Application**: Every browser instance gets anti-detection by default
+2. **Centralized Management**: All bypass scripts managed in one location
+3. **Consistent Application**: Same protection regardless of entry point
+4. **Fail-Safe Design**: Must explicitly disable to remove protection
+
+### Protection Layers
+
+```
+User Request
+    ↓
+BrowserFactory.create() [anti_detection=True by default]
+    ↓
+AntiDetectionManager.ensure_anti_detection()
+    ↓
+Apply all 7 bypass scripts
+    ↓
+Apply browser launch arguments
+    ↓
+Set realistic browser profile
+    ↓
+Ready for web access
+```
+
+### Verification
+
+The system logs anti-detection status for every browser creation:
+- ✅ `"Creating X browser with anti-detection ENABLED"`
+- ⚠️ `"Creating X browser with anti-detection DISABLED - NOT RECOMMENDED"`
 
 ## 🚀 Installation
-
-### Prerequisites
-- Python 3.8+
-- Chrome/Chromium browser
-- Node.js (for Playwright)
-
-### Quick Install
 
 ```bash
 # Clone the repository
@@ -148,314 +238,148 @@ pip install -r requirements.txt
 
 # Install Playwright browsers
 playwright install chromium
-
-# Set up environment
-cp .env.example .env
-# Edit .env with your API keys
 ```
 
-### 🐳 Docker Installation (Coming Soon)
+## 💻 Quick Start
+
+### Command Line Interface
 
 ```bash
-docker pull chatcbdai/uoa:latest
-docker run -it chatcbdai/uoa
-```
-
-## 💡 Quick Start
-
-### 🎯 CLI Assistant Mode
-
-```bash
+# Start the interactive CLI
 python main.py
+
+# Example commands:
+> Search for the best Python web scraping libraries
+> Scrape product details from https://example.com
+> Post "Hello World!" to Twitter
+> Take a screenshot of https://github.com
 ```
 
-```
-🤖 AI Web Assistant Ready!
-> Search for Python web scraping tutorials and create a comparison table
-> Take a screenshot of the Amazon homepage
-> Post "Hello World" to Twitter with #automation
-```
-
-### 🐍 Python API
+### Python API
 
 ```python
-from api import scrape, browse, post_to_social
+from api import scrape, search, post_to_social
 
-# Scrape with stealth mode
-content = await scrape("https://example.com", 
-                      output="markdown",
-                      headless=False)
+# Scrape a website (anti-detection automatically applied)
+data = await scrape("https://example.com")
 
-# Browser automation
-async with browse() as browser:
-    await browser.navigate("https://github.com")
-    await browser.fill_form({
-        'input[name="q"]': "undetectable automation"
-    })
-    await browser.screenshot("search_results.png")
+# Search Google (anti-detection automatically applied)
+results = await search("Python web automation")
 
-# Social media posting
-results = await post_to_social(
-    platforms=["twitter", "linkedin"],
-    content={
-        "text": "Check out UOA - The undetectable automation toolkit! 🚀",
-        "image": "demo.png"
-    }
+# Post to social media (anti-detection automatically applied)
+await post_to_social(
+    content="Hello from UOA!",
+    platforms=["twitter", "linkedin"]
 )
 ```
 
-## 📖 Documentation
-
-<table>
-<tr>
-<td width="50%">
-
-### 📚 Core Modules
-
-- **Browser Engines** - StealthBrowser, Playwright, Camoufox
-- **Anti-Detection** - Fingerprinting and bypass techniques
-- **Scrapers** - Unified scraping interface
-- **Social Media** - Platform automation
-- **AI Assistant** - Natural language interface
-
-</td>
-<td width="50%">
-
-### 🔧 Advanced Topics
-
-- **Configuration** - Environment and settings
-- **Authentication** - Credential management
-- **Rate Limiting** - Request throttling
-- **Error Handling** - Exception management
-- **Best Practices** - Production tips
-
-</td>
-</tr>
-</table>
-
-## 🎯 Examples
-
-### 🕷️ Web Scraping
-
-<details>
-<summary><b>Scrape Documentation Site</b></summary>
+### Direct Browser Usage
 
 ```python
-# Scrape entire documentation with pattern matching
-docs = await scrape(
-    "https://docs.example.com",
-    mode="pattern",
-    pattern="/docs/*",
-    max_depth=3,
-    output="markdown"
-)
+from browser import BrowserFactory
+
+# Create a browser (anti-detection enabled by default)
+browser = BrowserFactory.create(engine="stealth")
+await browser.initialize()
+
+# Navigate to a website (all 7 bypass scripts already applied)
+await browser.navigate("https://example.com")
+
+# Interact naturally
+await browser.click("button.submit")
+await browser.type_text("input[name='search']", "Python automation")
+
+# Clean up
+await browser.close()
 ```
 
-</details>
+## 📚 Documentation
 
-<details>
-<summary><b>E-commerce Price Monitoring</b></summary>
+### Browser Engines
 
-```python
-# Monitor product prices across multiple sites
-sites = ["amazon.com", "ebay.com", "walmart.com"]
-results = []
+| Engine | JavaScript | Anti-Detection | Use Case |
+|--------|-----------|----------------|----------|
+| StealthBrowser | ✅ Full | ✅ All 7 scripts | Primary choice for automation |
+| PlaywrightBrowser | ✅ Full | ✅ All 7 scripts | When you need Playwright features |
+| CamoufoxBrowser | ✅ Full | ⚠️ Firefox built-in | Firefox-specific sites |
+| StaticBrowser | ❌ None | ⚠️ Headers only | Simple HTTP requests |
 
-async with browse(headless=True) as browser:
-    for site in sites:
-        await browser.navigate(f"https://{site}/product/123")
-        price = await browser.extract('span.price')
-        results.append({"site": site, "price": price})
+### Configuration
+
+Create a `config.json` file to customize behavior:
+
+```json
+{
+  "browser": {
+    "default_engine": "stealth",
+    "headless": true,
+    "anti_detection": true
+  },
+  "llm": {
+    "default_provider": "openai",
+    "model": "gpt-4"
+  }
+}
 ```
 
-</details>
+### Environment Variables
 
-### 🤖 Browser Automation
+```bash
+# Required for AI features
+OPENAI_API_KEY=your_api_key
+ANTHROPIC_API_KEY=your_api_key
 
-<details>
-<summary><b>Complex Form Submission</b></summary>
-
-```python
-async with browse(anti_detection=True) as browser:
-    # Navigate and login
-    await browser.navigate("https://app.example.com")
-    await browser.login(
-        username="user@email.com",
-        password="secure_password",
-        username_selector="#email",
-        password_selector="#password",
-        submit_selector="button[type='submit']"
-    )
-    
-    # Fill complex form
-    await browser.fill_form({
-        'input[name="title"]': "Project Name",
-        'textarea[name="description"]': "Long description...",
-        'select[name="category"]': "technology",
-        'input[type="file"]': "/path/to/document.pdf"
-    })
+# Optional
+BROWSER_HEADLESS=false
+BROWSER_ENGINE=stealth
 ```
 
-</details>
+## 🧪 Testing
 
-### 📱 Social Media Automation
+```bash
+# Run anti-detection tests
+python tests/test_anti_detection_system.py
 
-<details>
-<summary><b>Multi-Platform Posting</b></summary>
-
-```python
-# Schedule posts from CSV
-content_manager = ContentManager("./social_content")
-orchestrator = SocialMediaOrchestrator(storage_path, llm_client)
-
-# Add credentials securely
-orchestrator.add_credentials("instagram", "username", "password")
-orchestrator.add_credentials("twitter", "username", "password")
-
-# Post to multiple platforms
-results = await orchestrator.post_to_platforms(
-    platforms=["instagram", "twitter"],
-    use_csv=True  # Uses scheduled_posts.csv
-)
+# Run all tests
+pytest tests/
 ```
-
-</details>
-
-## 🏗️ Architecture
-
-```mermaid
-graph TB
-    A[CLI/API Interface] --> B[AI Assistant]
-    B --> C[Task Executor]
-    C --> D[Browser Factory]
-    D --> E[StealthBrowser<br/>with Anti-Detection]
-    D --> F[Playwright Engine<br/>with Stealth Mode]
-    D --> G[Camoufox Engine]
-    D --> H[Static Engine]
-    
-    E --> K[Anti-Detection Layer]
-    K --> L[Fingerprint Protection]
-    K --> M[Behavior Simulation]
-    K --> N[Bypass Scripts]
-    
-    E --> P[Playwright Core]
-    F --> P[Playwright Core]
-    
-    C --> Q[Scraper System]
-    C --> R[Social Media Orchestrator]
-    R --> S[Platform Adapters]
-    
-    style E fill:#4ECDC4,stroke:#333,stroke-width:2px
-    style K fill:#FFD93D,stroke:#333,stroke-width:2px
-    style P fill:#6BCF7F,stroke:#333,stroke-width:2px
-```
-
-## 🔌 API Reference
-
-### Core Functions
-
-| Function | Description | Parameters |
-|----------|-------------|------------|
-| `scrape()` | Scrape web content | `url`, `mode`, `output`, `options` |
-| `browse()` | Browser automation context | `engine`, `headless`, `anti_detection` |
-| `post_to_social()` | Social media posting | `platforms`, `content`, `options` |
-| `monitor()` | Website monitoring | `url`, `interval`, `callback` |
-
-### Browser Methods
-
-| Method | Description | Example |
-|--------|-------------|---------|
-| `navigate()` | Go to URL | `await browser.navigate("https://example.com")` |
-| `click()` | Click element | `await browser.click("button.submit")` |
-| `fill_form()` | Fill form fields | `await browser.fill_form({"#name": "John"})` |
-| `extract()` | Extract content | `data = await browser.extract("table.results")` |
-| `screenshot()` | Take screenshot | `await browser.screenshot("page.png")` |
-
-## 🛡️ Security
-
-- **Credential Encryption**: Fernet encryption with OS keyring integration
-- **No Hardcoded Secrets**: All sensitive data in environment variables
-- **Session Isolation**: Each browser instance is isolated
-- **Automatic Cleanup**: Resources cleaned up after use
-- **Proxy Support**: Route traffic through proxies for anonymity
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md).
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-```bash
-# Fork and clone
-git clone https://github.com/YOUR_USERNAME/uoa.git
+### Areas We Need Help
 
-# Create feature branch
-git checkout -b feature/amazing-feature
+- Additional bypass scripts for emerging detection methods
+- Support for more social media platforms
+- Performance optimizations
+- Documentation improvements
+- Bug reports and fixes
 
-# Make changes and test
-python -m pytest tests/
-
-# Submit PR
-```
-
-## 📊 Performance
-
-<table>
-<tr>
-<td align="center">
-  <b>⚡ Speed</b><br/>
-  <sub>Concurrent processing with asyncio</sub><br/>
-  <code>~100 pages/minute</code>
-</td>
-<td align="center">
-  <b>💾 Memory</b><br/>
-  <sub>Efficient resource management</sub><br/>
-  <code><500MB typical usage</code>
-</td>
-<td align="center">
-  <b>🔄 Reliability</b><br/>
-  <sub>Auto-retry with exponential backoff</sub><br/>
-  <code>99.9% success rate</code>
-</td>
-</tr>
-</table>
-
-## 🗺️ Roadmap
-
-- [ ] 🐳 Docker support
-- [ ] 🌍 Distributed scraping
-- [ ] 📊 Analytics dashboard
-- [ ] 🔌 Plugin system
-- [ ] 📱 Mobile app automation
-- [ ] 🎯 Visual element selector
-- [ ] 🤝 Team collaboration features
-
-## 📜 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## ⚠️ Disclaimer
+
+This tool is for educational and legitimate automation purposes only. Users are responsible for compliance with websites' terms of service and applicable laws. Always respect robots.txt and rate limits.
+
 ## 🙏 Acknowledgments
 
-- [Playwright](https://playwright.dev/) - Browser automation framework
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - HTML parsing
-- [Rich](https://github.com/Textualize/rich) - Terminal formatting
-- [Shields.io](https://shields.io/) - Beautiful badges
-
-## 📞 Contact
-
-<div align="center">
-
-**Christopher Visser**  
-*Creator & Maintainer*
-
-[![Email](https://img.shields.io/badge/Email-Chris%40thcgummies.com-red?style=for-the-badge&logo=gmail)](mailto:Chris@thcgummies.com)
-[![GitHub](https://img.shields.io/badge/GitHub-%40cannavis-black?style=for-the-badge&logo=github)](https://github.com/cannavis)
-[![Website](https://img.shields.io/badge/Website-cbdoilsandedibles.com-blue?style=for-the-badge&logo=web)](https://cbdoilsandedibles.com/author/christopher-visser/)
-
-</div>
+- [Playwright](https://playwright.dev/) for browser automation
+- [Camoufox](https://github.com/camoufox/camoufox) for Firefox stealth
+- Anti-detection research community
+- All our contributors
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by the UOA Team</sub>
-  <br/>
-  <sub>If you find this project useful, please ⭐ star it!</sub>
+  <p>
+    <strong>Built with ❤️ by the UOA Team</strong>
+  </p>
+  <p>
+    <a href="https://github.com/chatcbdai/uoa/issues">Report Bug</a> •
+    <a href="https://github.com/chatcbdai/uoa/issues">Request Feature</a> •
+    <a href="https://github.com/chatcbdai/uoa/discussions">Discussions</a>
+  </p>
 </div>
